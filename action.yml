@@ -5,9 +5,8 @@ inputs:
     required: false
     description: "The flexlate-templates branch name that was used in resolving the merge conflict. Defaults to the branch name of the PR."
   gh_token:
-    required: false
+    required: true
     description: "The Github token to use for authentication"
-    default: "${{ secrets.GITHUB_TOKEN }}"
 runs:
   using: composite
   steps:
