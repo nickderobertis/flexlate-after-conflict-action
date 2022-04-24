@@ -48,11 +48,15 @@ runs:
       uses: repo-sync/pull-request@v2
       with:
         source_branch: ${{ steps.get_branch_name.outputs.use_branch }}
-        pr_title: Update project template using Flexlate
+        pr_title: Resolve Flexlate Merge Conflicts
         pr_body: |
-          Update template using Flexlate.
+          Resolve the merge conflicts in this PR in the web editor,
+          then feel free to merge the PR immediately. Another PR
+          will be opened into the main branch with the resolved conflicts.
 
-          Before merging, review the changes and adjust manually if necessary.
+          If you don't want to resolve the conflicts in the web editor,
+          then just create a feature branch locally and go through
+          the `fxt update` flow.
 
           - Updates coming from [copier-pypi-sphinx-flexlate][1]
 
