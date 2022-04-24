@@ -1,0 +1,8 @@
+name: 'Flexlate After-Conflict Action'
+description: 'Official Flexlate Github Action to be used after resolving merge conflict PRs'
+runs:
+  using: composite
+  steps:
+    - run: echo hello world
+      shell: bash
+  
