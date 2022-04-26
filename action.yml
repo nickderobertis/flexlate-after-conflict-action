@@ -48,14 +48,10 @@ runs:
       uses: repo-sync/pull-request@v2
       with:
         source_branch: ${{ steps.get_branch_name.outputs.use_branch }}
-        pr_title: Update project template using Flexlate
+        pr_title: Update project templates using Flexlate
         pr_body: |
           Update template using Flexlate.
 
           Before merging, review the changes and adjust manually if necessary.
-
-          - Updates coming from [copier-pypi-sphinx-flexlate][1]
-
-          [1]: https://github.com/nickderobertis/copier-pypi-sphinx-flexlate
         pr_label: "no auto merge,automated pr"
         github_token: ${{ inputs.gh_token }}
