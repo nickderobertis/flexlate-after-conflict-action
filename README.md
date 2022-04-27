@@ -6,6 +6,7 @@ Official Flexlate Github Action to be used after resolving merge conflict PRs
 
 - `branch_name`: The flexlate-templates branch name that was used in resolving the merge conflict. Defaults to the branch name of the PR.
 - `gh_token`: The Github token to use for authentication
+- `main_branch`: The main branch for the repository. Defaults to `master`.
 
 ## Outputs
 

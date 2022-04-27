@@ -7,6 +7,10 @@ inputs:
   gh_token:
     required: true
     description: "The Github token to use for authentication"
+  main_branch:
+    required: true
+    description: "The main branch for the repository"
+    default: master
 runs:
   using: composite
   steps:
@@ -48,6 +52,7 @@ runs:
       uses: repo-sync/pull-request@v2
       with:
         source_branch: ${{ steps.get_branch_name.outputs.use_branch }}
+        destination_branch: ${{ inputs.main_branch }}
         pr_title: Update project templates using Flexlate
         pr_body: |
           Update template using Flexlate.
