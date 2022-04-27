@@ -2,15 +2,16 @@
 
 Official Flexlate Github Action to be used after resolving merge conflict PRs
 
+This action is not intended to be used directly. It is used by the
+[Flexlate After-Merge Action](https://github.com/nickderobertis/flexlate-merge-action)
+to merge the `flexlate-templates-` branch from the merge conflict resolution PR into
+the feature branch and open a new PR into the main branch.
+
 ## Inputs
 
 - `branch_name`: The flexlate-templates branch name that was used in resolving the merge conflict. Defaults to the branch name of the PR.
 - `gh_token`: The Github token to use for authentication
 - `main_branch`: The main branch for the repository. Defaults to `master`.
-
-## Outputs
-
-## Examples
 
 ## Development Status
 
